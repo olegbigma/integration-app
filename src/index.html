@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+  <title>integration.app</title>
+</head>
+
+<body>
+  <header>
+    <!-- coming soon -->
+  </header>
+
+  <main class="main container">
+    <section>
+      <h2 class="section-title section-title--mb-24">How to work with Contacts in Hubspot API</h2>
+      <p>Contacts represent records about people in Hubspot API. They are typically associated with Companies and Activities such as Emails, Meetings, Notes, etc.</p>
+      <h3 class="section-subtitle">Contact Fields</h3>
+      <div class="table-decor">
+        <div class="table-wrap">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Field Name</th>
+                <th>API Key</th>
+                <th>Type</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>First Name</td>
+                <td>first_name</td>
+                <td>string</td>
+                <td>First name of the person</td>
+              </tr>
+              <tr>
+                <td>Last Name</td>
+                <td>last_name</td>
+                <td>string</td>
+                <td>Last name of the person</td>
+              </tr>
+              <tr>
+                <td>Address</td>
+                <td>address</td>
+                <td>object</td>
+                <td>Address associated with the person</td>
+              </tr>
+              <tr>
+                <td>Full</td>
+                <td>address.full</td>
+                <td>string</td>
+                <td>Full address associated with the person</td>
+              </tr>
+              <tr>
+                <td>Street</td>
+                <td>address.streeet</td>
+                <td>string</td>
+                <td>Street address</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      
+    </section>
+    <section class="operations">
+      <h2 class="section-title section-title--mb-32">Operations on Contacts Collection</h2>
+      <ul class="operations__list">
+        <li class="operations__list-item">
+          <a class="operations__list-link" href="#">
+            <img src="../src/img/plus.svg" alt="Create a Contact">
+            <span>Create a Contact</span>
+            <img src="../src/img/arrow-right.svg" aria-hidden="true" alt="">
+          </a>
+        </li>
+        <li class="operations__list-item">
+          <a class="operations__list-link" href="#">
+            <img src="../src/img/file-pencil.svg" alt="Update a Contact">
+            <span>Update a Contact</span>
+            <img src="../src/img/arrow-right.svg" aria-hidden="true" alt="">
+          </a>
+        </li>
+        <li class="operations__list-item">
+          <a class="operations__list-link" href="#">
+            <img src="../src/img/close.svg" alt="Delete a Contact">
+            <span>Delete a Contact</span>
+            <img src="../src/img/arrow-right.svg" aria-hidden="true" alt="">
+          </a>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer >
+    <!-- coming soon -->
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+.operations__list-item:not(:last-child) {
+  margin-bottom: 12px;
+}
+.operations__list-link {
+  display: grid;
+  grid-template-columns: 24px 1fr 24px;
+  padding: 20px;
+  column-gap: 12px;
+  border-radius: 12px;
+  border: 1px solid var(--blue-100);
+  background-image: var(--option-link-bg);
+  font-family: "Roboto", sans-serif;
+  transition: border-color var(--transition-time);
+  &:hover,
+  &:focus {
+    border-color: var(--blue-75);
+  }
+}

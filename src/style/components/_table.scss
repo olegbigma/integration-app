@@ -1,0 +1,63 @@
+.table-decor {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+
+  &::before {
+    position: absolute;
+    content: '';
+    bottom: -36px;
+    transform: translateX(-50%);
+    left: 50%;
+    width: calc(100% - 20px);
+    height: calc(100% - 60px);
+    background-color: var(--blue-50);
+    mix-blend-mode: normal;
+    opacity: 0.1;
+    filter: blur(70px);
+    pointer-events: none;
+  }
+}
+.table-wrap {
+  background: var(--table-border) border-box;
+  border: 1px solid transparent;
+  overflow-x: auto;
+  border-radius: 14px;
+}
+
+.table {
+  width: 750px;
+  background-color: var(--bg-primary);
+  padding: 12px;
+  border-radius: inherit;
+
+  @include up(md) {
+		width: 100%;
+	}
+
+  th {
+    text-align: left;
+  }
+
+  tr:not(:last-child) td {
+    border-bottom: 1px solid var(--blue-100);
+  }
+
+  td,
+  th {
+    padding: 12px;
+    
+    @include up(lg) {
+      width: 23%;
+    }
+
+    &:last-child {
+      width: 31%;
+    }
+  }
+
+  td:not(:last-child):not(:first-child) {
+    font-family: "Fira Code", monospace;
+    font-optical-sizing: auto;
+  }
+}

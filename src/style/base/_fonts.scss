@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "Helvetica";
+  src:
+    local("Helvetica"),
+    url("../../../static/fonts/Helvetica.woff2") format("woff2");
+  font-display: swap;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Helvetica-Bold";
+  src:
+    local("Helvetica-Bold"),
+    url("../../../static/fonts/Helvetica-Bold.woff2") format("woff2");
+  font-display: swap;
+  font-weight: 700;
+}

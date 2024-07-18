@@ -1,0 +1,29 @@
+body {
+	font-family: 'Helvetica', sans-serif;
+	background-color: var(--bg-primary);
+	color: var(--text-primary);
+}
+
+.main {
+	display: grid;
+	row-gap: var(--main-row-gap, 48px);
+	min-height: 100vh;
+	padding-top: 40px;
+	padding-bottom: 96px;
+}
+
+.container {
+	width: 100%;
+	padding-inline: var(--container-sm);
+	margin-inline: auto;
+
+	@include up(md) {
+		max-width: var(--container-width-md);
+		padding-inline: var(--container-md);
+	}
+
+	@include up(lg) {
+		max-width: var(--container-width-lg);
+		padding-inline: unset;
+	}
+}

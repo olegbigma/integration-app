@@ -1,0 +1,19 @@
+.section-title {
+	font-family: "Roboto", sans-serif;
+	font-weight: 700;
+
+	&--mb-24 {
+		margin-bottom: 24px;
+	}
+
+	&--mb-32 {
+		margin-bottom: 32px;
+	}
+}
+
+.section-subtitle {
+	font-family: 'Helvetica-Bold', sans-serif;
+	font-weight: 700;
+	font-size: 18px;
+	margin-block: 40px;
+}
